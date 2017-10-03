@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Static GK</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <ion-card *ngFor="let staticgk of staticgkList" (click)="goToDetails(staticgk.name)" style="margin-bottom:21px;border-top:3px solid green" [ngStyle]="{'border-top-color': getBorderColor(staticgk)}">
+      <ion-item>
+          <ion-avatar item-start>
+              <img [src]="staticgk.src">
+            </ion-avatar>
+        <!-- <ion-icon name="football" item-start large></ion-icon> -->
+        <h2>{{staticgk.name}}</h2>
+        <p>completed : {{staticgk.percentage}} percent</p>
+      </ion-item>  
+  </ion-card>
+
+</ion-content>

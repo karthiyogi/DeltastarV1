@@ -1,0 +1,48 @@
+[{
+    "name":"National Parks in India",
+    "src" : "assets/img/nationalpark.svg",
+    "percentage": 100,
+    "status": "completed"
+},
+{
+    "name":"Towns on Rivers",
+    "src" : "assets/img/river.svg",
+    "percentage": 100,
+    "status": "completed"
+},
+{
+    "name":"Airports in India",
+    "src" : "assets/img/airport.svg",
+    "percentage": 43,
+    "status": "process"
+},
+{
+    "name":"Famous Temples in India",
+    "src" : "assets/img/temples.svg",
+    "percentage": 78,
+    "status": "process"
+},
+{
+    "name":"Dams in India",
+    "src" : "assets/img/dam.svg",
+    "percentage": 0,
+    "status": "not started"
+},
+{
+    "name":"Presidents of India",
+    "src" : "assets/img/president.svg",
+    "percentage": 0,
+    "status": "not started"
+},
+{
+    "name":"Prime Mininster of India",
+    "src" : "assets/img/primeminister.svg",
+    "percentage": 0,
+    "status": "not started"
+},
+{
+    "name":"Election Commissioner of India",
+    "src" : "assets/img/election.svg",
+    "percentage": 0,
+    "status": "not started"
+}]
