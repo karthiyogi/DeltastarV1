@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { StaticgkListProvider } from '../../providers/staticgk-list/staticgk-list';
+import { StaticgkNotes } from '../../interfaces/staticgk-notes';
 
 /**
  * Generated class for the StaticgkNotesPage page.
@@ -15,8 +17,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class StaticgkNotesPage {
 name : string;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+staticgkNotes : StaticgkNotes[];
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public staticgklist: StaticgkListProvider) {
     this.name = navParams.get('notesname');
+console.log('this ');
+    staticgklist.loadSets().subscribe(staticgkNotes => {
+      console.log(staticgkNotes);
+      this.staticgkNotes = staticgkNotes;
+    })
+
+
   }
 
   ionViewDidLoad() {

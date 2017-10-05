@@ -3,6 +3,7 @@ import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import { StaticgkList } from '../../interfaces/staticgk-list';
+import { StaticgkNotes } from '../../interfaces/staticgk-notes';
 
 
 @Injectable()
@@ -14,6 +15,11 @@ export class StaticgkListProvider {
   load(): Observable<StaticgkList[]> {
     return this.http.get(`../../assets/data/staticgk-list.json`)
       .map(res => <StaticgkList[]>res.json());
+  }
+
+  loadSets(): Observable<StaticgkNotes[]> {
+    return this.http.get(`../../assets/data/staticgk-airpoorts.json`)
+      .map(res => <StaticgkNotes[]>res.json());
   }
 
 }

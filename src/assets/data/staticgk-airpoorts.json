@@ -1,0 +1,140 @@
+[{
+"name":"uttarkhand",
+"sets":[
+{
+    "word": "Jolly Grant",
+    "keyword": "Jolly Grant"
+}
+
+],
+"story": "Boy become jolly because he got UK visa Granted"
+},
+{
+    "name":"Gujarat",
+    "sets":[
+    {
+        "word": "Rajkot",
+        "keyword": "Raj"
+    },
+    {
+        "word": "Sardar Vallabhai Patel",
+        "keyword": "Savage"
+    },
+    {
+        "word": "Vadodara",
+        "keyword": "Vada"
+    }
+    
+    ],
+    "story": "Raj become Savage while eating vada"
+},
+{
+    "name":"Banglore",
+    "sets":[
+    {
+        "word": "kempgowda",
+        "keyword": "MP Goud"
+    }
+    
+    ],
+    "story": "Mp sadananda Gooud is from Banglore constitency"
+},
+{
+    "name":"West Bengal",
+    "sets":[
+    {
+        "word": "Netaji Subash Chandra Bose",
+        "keyword": "Nethaji"
+    },
+    {
+        "word": "Bagdogra",
+        "keyword": "Bag Dog"
+    }
+    
+    ],
+    "story": "Wife Brother Nethaji got bag Dog"
+},
+{
+    "name":"Kerala",
+    "sets":[
+    {
+        "word": "Cochin",
+        "keyword": "Coach"
+    },
+    {
+        "word": "Kozhicode",
+        "keyword": "Logic"
+    }
+    
+    ],
+    "story": "Coach gives logic to win the match in kerala"
+},
+{
+    "name":"Madhya Pradesh",
+    "sets":[
+    {
+        "word": "Devi holker",
+        "keyword": "Devi"
+    },
+    {
+        "word": "Raj bhoj",
+        "keyword": "Mp Raj"
+    },
+    {
+        "word": "jabalpur",
+        "keyword": "Job purpose"
+    },
+    {
+        "word": "Devi holker",
+        "keyword": "Devi"
+    },
+    {
+        "word": "Raj bhoj",
+        "keyword": "Mp Raj"
+    },
+    {
+        "word": "jabalpur",
+        "keyword": "Job purpose"
+    }
+    
+    ],
+    "story": "Devi met MP raj for Job Purpose"
+},
+{
+    "name":"Nagaland",
+    "sets":[
+    {
+        "word": "Dimapur",
+        "keyword": "Diminished"
+    }
+    
+    ],
+    "story": "Snake Land was diminished"
+},
+{
+    "name":"Jharkhand",
+    "sets":[
+    {
+        "word": "Birsamunda",
+        "keyword": "Birds"
+    }
+    
+    ],
+    "story": "Birds are flied away during Harikane"
+},
+{
+    "name":"Assam",
+    "sets":[
+    {
+        "word": "Lok Priya Gopinath",
+        "keyword": "lok Priya"
+    },
+    {
+        "word": "Silchar",
+        "keyword": "license"
+    }
+    
+    ],
+    "story": "Birds are flied away during Harikane"
+}
+]
