@@ -21,7 +21,7 @@ staticgkNotes : StaticgkNotes[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public staticgklist: StaticgkListProvider) {
     this.name = navParams.get('notesname');
-console.log('this ');
+console.log('this');
     staticgklist.loadSets().subscribe(staticgkNotes => {
       console.log(staticgkNotes);
       this.staticgkNotes = staticgkNotes;
