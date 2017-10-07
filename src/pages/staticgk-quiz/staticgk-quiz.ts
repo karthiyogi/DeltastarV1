@@ -15,6 +15,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class StaticgkQuizPage {
 name : string;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.name = navParams.get('qname');
   }

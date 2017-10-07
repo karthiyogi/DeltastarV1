@@ -33,6 +33,8 @@ import { StaticgkListProvider } from '../providers/staticgk-list/staticgk-list';
 import { StaticgkDetailPage } from '../pages/staticgk-detail/staticgk-detail';
 import { StaticgkNotesPage } from '../pages/staticgk-notes/staticgk-notes';
 import { StaticgkQuizPage } from '../pages/staticgk-quiz/staticgk-quiz';
+import { SharedTablePage } from '../pages/shared-table/shared-table';
+import { StaticgkVideosPage } from '../pages/staticgk-videos/staticgk-videos';
 
 
 @NgModule({
@@ -42,6 +44,8 @@ import { StaticgkQuizPage } from '../pages/staticgk-quiz/staticgk-quiz';
     StaticgkDetailPage,
     StaticgkNotesPage,
     StaticgkQuizPage,
+    SharedTablePage,
+    StaticgkVideosPage,
     // AboutPage,
     AccountPage,
     LoginPage,
@@ -91,6 +95,8 @@ import { StaticgkQuizPage } from '../pages/staticgk-quiz/staticgk-quiz';
     StaticgkDetailPage,
     StaticgkNotesPage,
     StaticgkQuizPage,
+    StaticgkVideosPage,
+    // SharedTablePage,
     // AboutPage,
     AccountPage,
     LoginPage,

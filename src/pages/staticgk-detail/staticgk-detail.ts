@@ -30,9 +30,9 @@ video: string;
   goToNotes(notesname: string) {
     this.navCtrl.push(StaticgkNotesPage, {notesname})
   }  
-    goToVideos(video: string) {
-      console.log(video);
-      this.navCtrl.push(StaticgkVideosPage, {video})
+  goToVideos(video: string) {
+    console.log(video);
+    this.navCtrl.push(StaticgkVideosPage, {video})
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad StaticgkDetailPage');

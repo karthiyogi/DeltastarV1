@@ -1,0 +1,45 @@
+<div class="bor-full"  *ngFor="let item of staticgkNotes">
+  <h4>{{item.name| uppercase}} :</h4>
+<ion-card *ngIf="item.sets.length > 5">
+  
+    <ion-card-content class ="card-table" *ngFor="let i of item.sets">
+        <ion-grid>
+            <ion-row>
+              <ion-col col-7>{{i.word}}</ion-col>
+              <ion-col class= "bor" col-5 align ="center">{{i.keyword}}</ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+        
+  
+  </ion-card>
+<div *ngIf="item.sets.length <= 5">
+  <ion-card *ngFor="let i of item.sets" >
+      
+        <ion-card-content class ="card-table">
+            <ion-grid>
+                <ion-row>
+                  <ion-col col-7>{{i.word}}</ion-col>
+                  <ion-col class= "bor" col-5 align ="center">{{i.keyword}}</ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+            
+      
+      </ion-card>
+    </div>
+      <h4>STORY:</h4>
+      <ion-card >
+        
+        
+          <ion-card-content align ="center" style="height:99px">
+              <ion-grid>
+                  <ion-row>
+                    <ion-col col-12 align-self-center align ="center">{{item.story}}</ion-col>
+                  </ion-row>
+                </ion-grid>
+            
+          </ion-card-content>
+        
+        </ion-card>
+      </div>

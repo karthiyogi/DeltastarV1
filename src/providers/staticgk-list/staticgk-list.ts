@@ -17,7 +17,8 @@ export class StaticgkListProvider {
       .map(res => <StaticgkList[]>res.json());
   }
 
-  loadSets(): Observable<StaticgkNotes[]> {
+  loadSets(value : string): Observable<StaticgkNotes[]> {
+    console.log(value);
     return this.http.get(`../../assets/data/staticgk-airpoorts.json`)
       .map(res => <StaticgkNotes[]>res.json());
   }
