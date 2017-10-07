@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { StaticgkQuizDetailPage } from '../staticgk-quiz-detail/staticgk-quiz-detail';
 
 /**
  * Generated class for the StaticgkQuizPage page.
@@ -19,6 +20,10 @@ name : string;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.name = navParams.get('qname');
   }
+
+  goToQuizDetail(quizname: string) {
+    this.navCtrl.push(StaticgkQuizDetailPage, {quizname})
+  }  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad StaticgkQuizPage');

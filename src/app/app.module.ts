@@ -1,3 +1,4 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { NgModule, ErrorHandler } from '@angular/core';
@@ -26,7 +27,6 @@ import { TabsPage } from '../pages/tabs-page/tabs-page';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { SupportPage } from '../pages/support/support';
 import { StaticgkPage } from '../pages/staticgk/staticgk';
-
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 import { StaticgkListProvider } from '../providers/staticgk-list/staticgk-list';
@@ -35,6 +35,7 @@ import { StaticgkNotesPage } from '../pages/staticgk-notes/staticgk-notes';
 import { StaticgkQuizPage } from '../pages/staticgk-quiz/staticgk-quiz';
 import { SharedTablePage } from '../pages/shared-table/shared-table';
 import { StaticgkVideosPage } from '../pages/staticgk-videos/staticgk-videos';
+import { StaticgkQuizDetailPage } from '../pages/staticgk-quiz-detail/staticgk-quiz-detail';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { StaticgkVideosPage } from '../pages/staticgk-videos/staticgk-videos';
     StaticgkQuizPage,
     SharedTablePage,
     StaticgkVideosPage,
+    StaticgkQuizDetailPage,
     // AboutPage,
     AccountPage,
     LoginPage,
@@ -65,6 +67,7 @@ import { StaticgkVideosPage } from '../pages/staticgk-videos/staticgk-videos';
   imports: [
     BrowserModule,
     HttpModule,
+    BrowserAnimationsModule,
     IonicModule.forRoot(ConferenceApp, {}, {
       links: [
         { component: TabsPage, name: 'TabsPage', segment: 'tabs-page' },
@@ -96,6 +99,7 @@ import { StaticgkVideosPage } from '../pages/staticgk-videos/staticgk-videos';
     StaticgkNotesPage,
     StaticgkQuizPage,
     StaticgkVideosPage,
+    StaticgkQuizDetailPage,
     // SharedTablePage,
     // AboutPage,
     AccountPage,
