@@ -1,9 +1,3 @@
-<!--
-  Generated template for the StaticgkQuizDetailPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
@@ -15,35 +9,35 @@
 
 <ion-content>
 
-
-    <ion-grid>
+<span *ngFor="let item of totalitems; let i = index" >
+    <ion-grid  *ngIf="i%3 ==0" class="no-padding">
         <ion-row>
           <ion-col col-4 >
-              <ion-card class="quiz-game" (click)="toggleVisible()">
-                    <ion-card-content [@myvisibility]="visibleState">
-                      Quiz blink
+              <ion-card class="quiz-game" [@slideInOut]="totalitems[i].state" (click)="flipInY(i)">
+                    <ion-card-content [ngClass]="{'blanktext': (totalitems[i].state=='out')}">
+                      {{totalitems[i].name}}
                     </ion-card-content>
                   </ion-card>
           </ion-col>
           <ion-col col-4>
-              <ion-card class="quiz-game">
-                  <ion-card-content>
-                    Quiz 2
+              <ion-card class="quiz-game" [@slideInOut]="totalitems[i+1].state" (click)="flipInY(i+1)">
+                  <ion-card-content [ngClass]="{'blanktext': (totalitems[i+1].state=='out')}">
+                      {{totalitems[i+1].name}}
                   </ion-card-content>
                 </ion-card>
           </ion-col>
           <ion-col col-4>
-              <ion-card class="quiz-game">
-                  <ion-card-content>
-                    Quiz 3
+              <ion-card class="quiz-game" [@slideInOut]="totalitems[i+2].state" (click)="flipInY(i+2)">
+                  <ion-card-content [ngClass]="{'blanktext': (totalitems[i+2].state=='out')}">
+                      {{totalitems[i+2].name}}
                   </ion-card-content>
                 </ion-card>
 
           </ion-col>
         </ion-row>
-        <ion-row>
+        <!-- <ion-row>
             <ion-col col-4>
-                <ion-card class="quiz-game">
+                <ion-card class="quiz-game" >
                       <ion-card-content>
                         Quiz 1
                       </ion-card-content>
@@ -64,8 +58,8 @@
                   </ion-card>
   
             </ion-col>
-          </ion-row>
-          <ion-row>
+          </ion-row> -->
+          <!-- <ion-row>
               <ion-col col-4>
                   <ion-card class="quiz-game">
                         <ion-card-content>
@@ -88,8 +82,8 @@
                     </ion-card>
     
               </ion-col>
-            </ion-row>
-            <ion-row>
+            </ion-row> -->
+            <!-- <ion-row>
                 <ion-col col-4>
                     <ion-card class="quiz-game">
                           <ion-card-content>
@@ -112,7 +106,7 @@
                       </ion-card>
       
                 </ion-col>
-              </ion-row>
+              </ion-row> -->
       </ion-grid>
- 
+    </span>
 </ion-content>
